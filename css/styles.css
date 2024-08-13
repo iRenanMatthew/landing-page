@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+ul,
+ul li a {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --dark-1: #1f2937;
+  --white-1: #f9faf8;
+  --gray-1: #e5e7eb;
+  --blue-1: #3882f6;
+}
+
+.hero-content,
+.section-content,
+.nav-content {
+  width: 70vw;
+  margin-inline: auto;
+  padding: 100px 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--dark-1);
+}
+
+.nav-content {
+  padding: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content h2 {
+  color: var(--white-1);
+  font-size: 1.5rem;
+}
+
+.nav-content ul {
+  display: flex;
+  font-size: 1.125rem;
+  gap: 30px;
+}
+
+.nav ul li a {
+  color: var(--gray-1);
+}
+
+.hero {
+  background: var(--dark-1);
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-section {
+  width: calc(100% / 2);
+}
+
+.hero-section:first-child {
+  width: calc(100% / 2 - 150px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--white-1);
+}
+
+.hero-section p {
+  font-size: 1.125rem;
+  color: var(--gray-1);
+}
+
+.hero-section button {
+  background: var(--blue-1);
+  color: var(--white-1);
+  margin-top: 10px;
+}
+
+.section-one {
+  background: var(--white-1);
+  text-align: center;
+}
+
+.section-content {
+  padding: 0;
+}
+
+.section-one .section-content h2 {
+  padding: 50px 0 50px;
+  font-size: 36px;
+  font-weight: 900;
+}
